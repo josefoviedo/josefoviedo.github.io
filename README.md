@@ -1,28 +1,22 @@
-***This repository named 'josefoviedo.github.io' is the main source for all the code and files I want to be public regarding my own personal data analytics portfolio, where I only use simulated or open data for my projects and never any sort of private/sensative data. It includes things like this README file which is sort of my repository landing page with links to view my personal website, data analysis projects, social media, etc.***
+# josefoviedo.github.io
 
-# Hi, I’m *@josefoviedo*
+This repository now serves as the source for my GitHub Pages landing site and a small set of curated project pages that reflect my current direction in bioinformatics, research computing, HPC workflows, and practical AI for scientific environments.
 
-### 💻  Aspiring technical data analyst and bioinformatician
+## Current site structure
 
-## A little about me...
+- `index.html`
+  - main landing page
+- `assets/site.css`
+  - shared site styling
+- `projects/`
+  - short public-facing pages for selected current work
 
-I’m looking to collaborate or be a sounding board on SL/ML, model tuning, big data processing, data governance, workflow/pipeline development, data mining.
+## Archived material
 
-👀🔎 Find me anywhere below to connect... 
+Only the self-contained HTML snapshots still linked from the homepage are being kept from the earlier learning period:
 
+- `Bellabeat_eda_repo/wearable-smart-device_EDA_for_Bellabeat.html`
+- `rapid_data_viz_projects_repo/gapminder_lifeExp_gdpPercap/gapminder_lifeExp_gdpPercap_viz.html`
+- `rapid_data_viz_projects_repo/hotelbookings_children_analysis/hotelbookings_children_analysis.html`
 
-  > [LinkedIn: click here](https://www.linkedin.com/in/jose-oviedo-461278192/)
-
-  > [Personal Website: click here](https://josefoviedo.blogspot.com/)
-
-  > [Tableau_Portfolio: click here](https://public.tableau.com/app/profile/josefoviedo)
-
-  > [RPubs_Portfolio: click here](https://rpubs.com/joseoviedo)
-
-  > [Kaggle_Portfolio: click here](https://www.kaggle.com/josefoviedo)
-
-  > [Twitter: click here](https://twitter.com/josefoviedo_)
-
-  > [stackoverflow_Profile: click here](https://stackoverflow.com/users/19770925/jose-oviedo?tab=profile)
-
-  > [GoogleDev_Profile: click here](https://g.dev/jfoviedo)
+These remain accessible for historical context, but they are no longer the main representation of my current work. Older source data, draft notebooks, and R project files are being trimmed out where they are not required to serve the site.
