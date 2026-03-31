@@ -353,6 +353,7 @@ a {
 .semantic-toolbar {
   display: flex;
   justify-content: flex-end;
+  gap: 10px;
   margin-top: 18px;
 }
 
@@ -388,9 +389,9 @@ a {
 }
 
 .semantic-chip {
-  padding: 9px 12px;
-  font: inherit;
-  line-height: 1.25;
+  padding: 7px 9px;
+  font-size: 0.84rem;
+  line-height: 1.15;
   cursor: pointer;
   transition:
     transform 180ms ease,

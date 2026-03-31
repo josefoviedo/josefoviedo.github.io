@@ -1,6 +1,22 @@
 {
   "schema_version": 1,
   "last_updated": "2026-03-31",
+  "featured_card_ids": [
+    "research_computing_systems",
+    "hpc_workflow_engineering",
+    "genomic_data_transformation",
+    "reproducible_modeling",
+    "methylation_modeling",
+    "data_quality_and_validation",
+    "retrieval_for_research",
+    "semantic_search_workflows",
+    "local_first_ai_tools",
+    "on_device_ai",
+    "agentic_prototyping",
+    "cli_and_developer_tooling",
+    "interactive_research_apps",
+    "from_research_to_engineering"
+  ],
   "project_items": [
     {
       "id": "rrbs_wgbs_hpc_genomic_etl",

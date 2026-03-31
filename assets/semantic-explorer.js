@@ -2,12 +2,14 @@
   const chipGrid = document.getElementById("semantic-chip-grid");
   const output = document.getElementById("semantic-output");
   const resetButton = document.getElementById("semantic-reset");
+  const shuffleButton = document.getElementById("semantic-shuffle");
 
-  if (!chipGrid || !output || !resetButton) {
+  if (!chipGrid || !output || !resetButton || !shuffleButton) {
     return;
   }
 
   const DATA_URL = "assets/semantic_items.json";
+  const VISIBLE_CARD_COUNT = 8;
   const STOP_WORDS = new Set([
     "a", "an", "and", "are", "around", "as", "at", "be", "been", "being",
     "build", "built", "by", "can", "clean", "current", "data", "for", "from",
@@ -29,7 +31,9 @@
   };
 
   const state = {
+    allCards: [],
     cards: [],
+    visibleCards: [],
     projects: [],
     activeCardId: null
   };
@@ -69,6 +73,19 @@
     while (node.firstChild) {
       node.removeChild(node.firstChild);
     }
+  }
+
+  function sampleCards(cards, count) {
+    const copy = cards.slice();
+
+    for (let index = copy.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      const temp = copy[index];
+      copy[index] = copy[swapIndex];
+      copy[swapIndex] = temp;
+    }
+
+    return copy.slice(0, Math.min(count, copy.length));
   }
 
   function makeTagList(tags) {
@@ -154,7 +171,7 @@
 
     const intro = document.createElement("p");
     intro.textContent =
-      "This explorer maps 24 concept cards against the 3 featured project pages on the site. Some cards point directly to published current work, while others reflect directions I am actively building toward.";
+      "This explorer rotates " + state.visibleCards.length + " cards at a time from a featured set of " + state.cards.length + ", then maps them against the 3 featured project pages on the site. Some cards point directly to published current work, while others reflect directions I am actively building toward.";
     wrapper.appendChild(intro);
 
     wrapper.appendChild(
@@ -203,7 +220,7 @@
   }
 
   function renderCard(cardId) {
-    const selected = state.cards.find((card) => card.id === cardId);
+    const selected = state.allCards.find((card) => card.id === cardId);
     if (!selected) {
       return;
     }
@@ -276,7 +293,7 @@
   function renderChips() {
     clearChildren(chipGrid);
 
-    state.cards.forEach((card) => {
+    state.visibleCards.forEach((card) => {
       const button = document.createElement("button");
       button.className = "semantic-chip";
       button.type = "button";
@@ -288,11 +305,24 @@
     });
   }
 
+  function shuffleVisibleCards() {
+    state.activeCardId = null;
+    resetButton.disabled = true;
+    state.visibleCards = sampleCards(state.cards, VISIBLE_CARD_COUNT);
+    renderChips();
+    setActiveChip();
+    renderOverview();
+  }
+
   resetButton.addEventListener("click", () => {
     state.activeCardId = null;
     resetButton.disabled = true;
     setActiveChip();
     renderOverview();
+  });
+
+  shuffleButton.addEventListener("click", () => {
+    shuffleVisibleCards();
   });
 
   fetch(DATA_URL)
@@ -303,10 +333,17 @@
       return response.json();
     })
     .then((data) => {
-      state.cards = data.concept_cards || [];
+      const allCards = data.concept_cards || [];
+      const featuredIds = data.featured_card_ids || [];
+
+      state.allCards = allCards;
+      state.cards = featuredIds.length
+        ? featuredIds
+            .map((id) => allCards.find((card) => card.id === id))
+            .filter(Boolean)
+        : allCards;
       state.projects = data.project_items || [];
-      renderChips();
-      renderOverview();
+      shuffleVisibleCards();
     })
     .catch(() => {
       output.innerHTML =
