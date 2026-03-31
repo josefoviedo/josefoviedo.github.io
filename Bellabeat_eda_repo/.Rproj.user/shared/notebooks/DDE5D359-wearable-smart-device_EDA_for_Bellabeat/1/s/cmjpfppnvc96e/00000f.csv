@@ -1,4 +1,0 @@
-"0",""
-"0","sleep <- sleep |>"
-"0","  separate(SleepDay, c(""ActivityDate"", ""SleepdaystartHour""), "" "") |>"
-"0","  select(1:2, 5:6)"

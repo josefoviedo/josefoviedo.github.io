@@ -1,8 +1,0 @@
-"0","## call R packages"
-"0",""
-"0","library(tidyverse)"
-"0","library(scales)"
-"0","library(vctrs)"
-"0","library(knitr)"
-"0","library(rmarkdown)"
-"0","library(prettydoc)"

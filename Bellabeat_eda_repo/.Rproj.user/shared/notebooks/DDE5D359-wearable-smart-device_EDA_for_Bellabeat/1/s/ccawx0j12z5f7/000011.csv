@@ -1,6 +1,0 @@
-"0","## hist() hourly Calories"
-"0",""
-"0","histHourlyCalories <- hist(hcal_hsteps_merged$Calories,"
-"0","     col = ""green"","
-"0","     main = ""Total Hourly Observations Frequency from 'Calories' Variable"","
-"0","     xlab = ""TOTAL CALORIES BURNED PER HOUR"")"

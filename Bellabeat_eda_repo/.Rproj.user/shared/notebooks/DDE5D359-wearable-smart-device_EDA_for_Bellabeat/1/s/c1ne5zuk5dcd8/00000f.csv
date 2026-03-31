@@ -1,5 +1,0 @@
-"0",""
-"0","hcal <- hcal |>"
-"0","  separate(ActivityHour, c(""ActivityDate"", ""ActivityHour"", ""AMPM""), "" "") |>"
-"0","  unite(""ActivityHour"", ActivityHour:AMPM, sep = "" "", remove = FALSE) |>"
-"0","  select(1:3, 5)"

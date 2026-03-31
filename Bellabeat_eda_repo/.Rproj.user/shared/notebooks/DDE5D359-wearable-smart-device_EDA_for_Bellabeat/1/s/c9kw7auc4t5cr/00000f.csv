@@ -1,6 +1,0 @@
-"0","##  hist(log()) daily TimeUntilSleep"
-"0",""
-"0","histTimeUntilSleep <- hist(log(v2_new_da_sleep$TimeUntilSleep),"
-"0","     col = ""purple"","
-"0","     main = ""Most Frequent Daily Observations from 'TimeUntilSleep' Variable"","
-"0","     xlab = ""MINUTES UNTIL ASLEEP(x10)"")"

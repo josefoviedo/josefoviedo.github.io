@@ -1,5 +1,0 @@
-"0","## da and sleep by 2 shared variables"
-"0",""
-"0","da_sleep_merged <- "
-"0","  merge(x = da, y = sleep, by = c(""Id"", ""ActivityDate""),"
-"0","        all = TRUE)"

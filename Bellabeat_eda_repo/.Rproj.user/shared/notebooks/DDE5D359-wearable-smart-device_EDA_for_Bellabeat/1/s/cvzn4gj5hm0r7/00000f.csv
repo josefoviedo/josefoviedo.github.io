@@ -1,6 +1,0 @@
-"0","## could have omitted the missing/NA values but I already had this script ready so yeah"
-"0",""
-"0","v2_new_da_sleep$StepsPerCalorie <- ifelse(is.na(v2_new_da_sleep$StepsPerCalorie),"
-"0","                                         mean(v2_new_da_sleep$StepsPerCalorie,"
-"0","                                              na.rm = TRUE),"
-"0","                                         v2_new_da_sleep$StepsPerCalorie)"

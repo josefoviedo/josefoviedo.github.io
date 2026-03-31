@@ -15,9 +15,9 @@ This file holds repo-structure and maintenance notes for `josefoviedo.github.io`
 
 Only the self-contained HTML snapshots still linked from the homepage are being kept from the earlier learning period:
 
-- `Bellabeat_eda_repo/wearable-smart-device_EDA_for_Bellabeat.html`
-- `rapid_data_viz_projects_repo/gapminder_lifeExp_gdpPercap/gapminder_lifeExp_gdpPercap_viz.html`
-- `rapid_data_viz_projects_repo/hotelbookings_children_analysis/hotelbookings_children_analysis.html`
+- `rapid_data_viz_projs/Bellabeat_eda_repo/wearable-smart-device_EDA_for_Bellabeat.html`
+- `rapid_data_viz_projs/gapminder_lifeExp_gdpPercap/gapminder_lifeExp_gdpPercap_viz.html`
+- `rapid_data_viz_projs/hotelbookings_children_analysis/hotelbookings_children_analysis.html`
 
 These remain accessible for historical context, but they are no longer the main representation of current work.
 

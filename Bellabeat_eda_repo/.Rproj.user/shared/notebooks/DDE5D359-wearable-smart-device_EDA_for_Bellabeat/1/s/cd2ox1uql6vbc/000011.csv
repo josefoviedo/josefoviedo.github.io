@@ -1,6 +1,0 @@
-"0","## hist() daily Calories"
-"0",""
-"0","histCalories <- hist(v2_new_da_sleep$Calories,"
-"0","     col = ""lightgreen"","
-"0","     main = ""Total Daily Observations Frequency from 'Calories' Variable"","
-"0","     xlab = ""TOTAL DAILY CALORIES PER USER"")"

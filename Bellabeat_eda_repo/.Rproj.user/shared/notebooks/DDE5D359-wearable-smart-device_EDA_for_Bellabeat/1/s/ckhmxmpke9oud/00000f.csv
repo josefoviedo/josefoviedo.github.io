@@ -1,6 +1,0 @@
-"0","## hcal and hsteps by 3 shared variables"
-"0","## mutate allowed for 24hr or 12 hr ampm clock time for correct visualization later on"
-"0","hcal_hsteps_merged <-"
-"0","  merge(x = hcal, y = hsteps, by = c(""Id"", ""ActivityDate"", ""ActivityHour""),"
-"0","        all = TRUE) |>"
-"0","    mutate(ActivityHour = strptime(ActivityHour, format=""%I:%M:%S %p"") %>% format(., ""%H:%M:%p""))"

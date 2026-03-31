@@ -1,6 +1,0 @@
-"0","## hist() daily TotalSteps"
-"0",""
-"0","histTotalSteps <- hist(v2_new_da_sleep$TotalSteps,"
-"0","     col = ""lightblue"","
-"0","     main = ""Total Daily Observations Frequency from 'TotalSteps' Variable"","
-"0","     xlab = ""TOTAL DAILY STEPS PER USER"")"

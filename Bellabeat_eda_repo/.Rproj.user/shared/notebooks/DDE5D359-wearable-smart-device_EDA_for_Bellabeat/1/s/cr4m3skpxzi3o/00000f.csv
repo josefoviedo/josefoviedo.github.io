@@ -1,7 +1,0 @@
-"0","## dplyr to mutate and groupby 'Id'"
-"0","## to show each individual user over data collection period"
-"0",""
-"0","hcal_hsteps_merged_groupby_Id <- hcal_hsteps_merged |>"
-"0","  group_by(Id) |>"
-"0","  mutate(IdGroupby = cur_group_id())"
-"0",""

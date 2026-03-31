@@ -1,6 +1,0 @@
-"0","## hist(log()) hourly StepTotal "
-"0",""
-"0","histHourlylogStepTotal <- hist(log(hcal_hsteps_merged$StepTotal),"
-"0","     col = ""darkblue"","
-"0","     main = ""Most Frequent Hourly Observations from 'StepTotal' Variable"","
-"0","     xlab = ""TOTAL STEPS PER HOUR(x10)"")"
