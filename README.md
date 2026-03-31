@@ -19,15 +19,9 @@ Most of my energy right now goes into the overlap between bioinformatics, resear
 
 I’ve also been spending time around open-source agentic frameworks like OpenClaw and using coding agents like Codex and Claude to spin up ad hoc applications quickly. I want to spend more time experimenting with Qwen Coder, Kimi, and the Minimax family as well.
 
-## A Few Things To Look At
-
-- [Live site](https://josefoviedo.github.io)
-- [RRBS/WGBS HPC Genomic ETL Pipelines](projects/rrbs-wgbs-hpc-genomic-etl.html)
-- [DNA Methylation Age Clock Modeling](projects/dna-methylation-age-clock-modeling.html)
-- [Self-Hosted Bioinformatics AI / Internal RAG System](projects/self-hosted-bioinformatics-ai-rag.html)
-
 ## Find Me
 
+- [josefoviedo.github.io](https://josefoviedo.github.io)
 - [GitHub](https://github.com/josefoviedo)
 - [LinkedIn](https://www.linkedin.com/in/jose-f-oviedo-461278192/)
 - [UA profile](https://live-azs-pharmacy.pantheonsite.io/person/jose-f-oviedo)
