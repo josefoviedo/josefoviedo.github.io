@@ -232,13 +232,36 @@ a {
   padding: 24px;
 }
 
+.card-link {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(163, 75, 31, 0.28);
+  box-shadow: 0 24px 56px rgba(34, 36, 28, 0.12);
+  background: rgba(255, 253, 248, 0.98);
+}
+
+.card-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .card h3 {
   font-size: 1.45rem;
   margin-bottom: 12px;
-}
-
-.card h3 a {
-  text-decoration: none;
 }
 
 .card p,
@@ -260,6 +283,14 @@ a {
 .compact-list li,
 .project-panel li {
   margin-top: 6px;
+}
+
+.card-cta {
+  display: inline-flex;
+  margin-top: auto;
+  padding-top: 16px;
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .stack-panel {
