@@ -236,6 +236,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  position: relative;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -248,15 +249,22 @@ a {
 
 .card-link:hover,
 .card-link:focus-visible {
-  transform: translateY(-6px);
-  border-color: rgba(163, 75, 31, 0.28);
-  box-shadow: 0 24px 56px rgba(34, 36, 28, 0.12);
-  background: rgba(255, 253, 248, 0.98);
+  transform: translateY(-8px);
+  border-color: rgba(163, 75, 31, 0.48);
+  box-shadow: 0 28px 60px rgba(34, 36, 28, 0.16);
+  background: rgba(255, 252, 245, 1);
 }
 
 .card-link:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.card-link:hover h3,
+.card-link:focus-visible h3,
+.card-link:hover .card-cta,
+.card-link:focus-visible .card-cta {
+  color: var(--accent);
 }
 
 .card h3 {
@@ -287,10 +295,20 @@ a {
 
 .card-cta {
   display: inline-flex;
+  align-self: flex-end;
+  justify-content: flex-end;
   margin-top: auto;
   padding-top: 16px;
   color: var(--ink);
+  font-size: 0.88rem;
   font-weight: 700;
+  text-align: right;
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.card-link:hover .card-cta,
+.card-link:focus-visible .card-cta {
+  transform: translateX(4px);
 }
 
 .stack-panel {
