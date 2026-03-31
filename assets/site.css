@@ -342,6 +342,201 @@ a {
   color: var(--ink);
 }
 
+.semantic-panel {
+  overflow: hidden;
+}
+
+.semantic-intro {
+  max-width: 56ch;
+}
+
+.semantic-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.semantic-reset,
+.semantic-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.semantic-reset {
+  padding: 9px 13px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.semantic-reset:disabled {
+  opacity: 0.48;
+  cursor: default;
+}
+
+.semantic-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.semantic-chip {
+  padding: 9px 12px;
+  font: inherit;
+  line-height: 1.25;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.semantic-chip:hover,
+.semantic-chip:focus-visible,
+.semantic-reset:hover,
+.semantic-reset:focus-visible {
+  border-color: rgba(163, 75, 31, 0.44);
+  background: rgba(255, 250, 244, 0.98);
+}
+
+.semantic-chip:hover,
+.semantic-chip:focus-visible {
+  transform: translateY(-1px);
+}
+
+.semantic-chip.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #f8f4ed;
+  box-shadow: 0 12px 26px rgba(22, 37, 33, 0.16);
+}
+
+.semantic-chip:focus-visible,
+.semantic-reset:focus-visible,
+.semantic-result-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.semantic-output {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.semantic-state {
+  margin: 0;
+  color: var(--muted);
+}
+
+.semantic-focus h3,
+.semantic-results-heading,
+.semantic-result-card h4 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.semantic-focus h3 {
+  font-size: 1.3rem;
+}
+
+.semantic-focus p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.semantic-mini-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.semantic-mini-tags li {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.semantic-results-block {
+  margin-top: 20px;
+}
+
+.semantic-results-heading {
+  font-size: 1.08rem;
+}
+
+.semantic-results-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.semantic-result-card {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.semantic-result-card:hover,
+.semantic-result-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(163, 75, 31, 0.42);
+  box-shadow: 0 18px 38px rgba(34, 36, 28, 0.12);
+  background: rgba(255, 251, 245, 0.98);
+}
+
+.semantic-result-kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.semantic-result-card h4 {
+  font-size: 1.08rem;
+}
+
+.semantic-result-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.semantic-note {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(163, 75, 31, 0.18);
+  background: rgba(255, 249, 241, 0.84);
+  color: var(--muted);
+}
+
 .archive-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }

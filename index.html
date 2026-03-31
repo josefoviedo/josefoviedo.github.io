@@ -99,15 +99,22 @@
       </section>
 
       <section id="about" class="section-block two-column">
-        <div class="panel stack-panel">
-          <p class="eyebrow">About</p>
-          <h2>Where I’m focused now</h2>
-          <p>
-            My current direction sits at the intersection of bioinformatics, research computing, and practical ML systems. I am most interested in work that combines real biological data, robust engineering, and scientific environments that need tools to be scalable, reproducible, and genuinely useful.
+        <div class="panel stack-panel semantic-panel">
+          <p class="eyebrow">Explore</p>
+          <h2>Semantic Project Explorer</h2>
+          <p class="semantic-intro">
+            Click a concept card to see how the featured work on this site maps to it. This is a lightweight retrieval-style layer over the projects and themes I am building around right now.
           </p>
-          <p>
-            That includes HPC-based genomic workflows, data transformation pipelines, model-oriented experimentation systems, and internal AI tools that help researchers work more effectively with scientific knowledge.
-          </p>
+
+          <div class="semantic-toolbar">
+            <button class="semantic-reset" id="semantic-reset" type="button" disabled>Show overview</button>
+          </div>
+
+          <div class="semantic-chip-grid" id="semantic-chip-grid" aria-label="Concept cards"></div>
+
+          <div class="semantic-output" id="semantic-output" aria-live="polite">
+            <p class="semantic-state">Loading concept cards...</p>
+          </div>
         </div>
 
         <div class="panel stack-panel">
@@ -147,5 +154,6 @@
       <p>&copy; 2026. Built as a lightweight GitHub Pages site focused on my current work in bioinformatics, research computing, and practical AI for scientific environments.</p>
     </footer>
   </div>
+  <script src="assets/semantic-explorer.js" defer></script>
 </body>
 </html>

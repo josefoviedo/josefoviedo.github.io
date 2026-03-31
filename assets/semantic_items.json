@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-03-31",
+  "project_items": [
+    {
+      "id": "rrbs_wgbs_hpc_genomic_etl",
+      "title": "RRBS/WGBS HPC Genomic ETL Pipelines",
+      "href": "projects/rrbs-wgbs-hpc-genomic-etl.html",
+      "summary": "End-to-end genomic processing workflows on HPC infrastructure built for scale, reproducibility, and downstream-ready biological analysis.",
+      "capabilities": [
+        "Python orchestration and data handling",
+        "Bash-based workflow execution",
+        "SLURM scheduling on HPC infrastructure",
+        "Genomic preprocessing and transformation",
+        "QC and downstream-ready structured outputs"
+      ],
+      "tags": [
+        "python",
+        "bash",
+        "slurm",
+        "hpc",
+        "genomics",
+        "etl",
+        "validation",
+        "research-computing"
+      ],
+      "semantic_text": "HPC workflow engineering for RRBS and WGBS genomic ETL. This project turns raw sequencing reads into analysis-ready outputs through scalable, reproducible pipelines using Python, Bash, and SLURM. The focus is large-sample execution, data transformation, QC, and reliable downstream handoff."
+    },
+    {
+      "id": "dna_methylation_age_clock_modeling",
+      "title": "DNA Methylation Age Clock Modeling",
+      "href": "projects/dna-methylation-age-clock-modeling.html",
+      "summary": "An engineering-focused extension of an existing lab workflow into a more configurable and reproducible system for methylation-based age prediction and experimentation.",
+      "capabilities": [
+        "Elastic-net modeling workflows",
+        "CLI-driven execution",
+        "Cross-validation and repeat-aware experiments",
+        "External validation and structured reporting",
+        "Metadata capture and run logging"
+      ],
+      "tags": [
+        "ml",
+        "modeling",
+        "methylation",
+        "cross-validation",
+        "logging",
+        "cli",
+        "reproducibility",
+        "research-ml"
+      ],
+      "semantic_text": "Reproducible modeling and workflow engineering for DNA methylation age prediction. This project turns a narrower lab method into a configurable experimentation system with elastic-net modeling, multiple validation modes, structured outputs, metadata capture, and cleaner auditability."
+    },
+    {
+      "id": "self_hosted_bioinformatics_ai_rag",
+      "title": "Self-Hosted Bioinformatics AI / Internal RAG System",
+      "href": "projects/self-hosted-bioinformatics-ai-rag.html",
+      "summary": "A local research assistant built around retrieval-augmented generation for curated scientific content, with a focus on internal use rather than generic chatbot behavior.",
+      "capabilities": [
+        "Document ingestion and text chunking",
+        "Sentence-transformer embeddings",
+        "FAISS vector indexing",
+        "Retrieval workflows",
+        "Streamlit interface"
+      ],
+      "tags": [
+        "rag",
+        "retrieval",
+        "embeddings",
+        "faiss",
+        "streamlit",
+        "local-first",
+        "scientific-content",
+        "applied-ai"
+      ],
+      "semantic_text": "Local-first AI tooling for scientific environments. This project uses document ingestion, chunking, sentence-transformer embeddings, FAISS indexing, and a Streamlit interface to support retrieval over curated scientific corpora for internal research use."
+    }
+  ],
+  "concept_cards": [
+    {
+      "id": "hpc_workflow_engineering",
+      "title": "HPC Workflow Engineering",
+      "summary": "Parallel research workflows built for scale, scheduling, and repeatability.",
+      "why_it_matters": "This card highlights engineering work where orchestration, throughput, and reliable execution matter more than one-off scripting.",
+      "tags": ["hpc", "slurm", "python", "bash", "parallelism", "workflow"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl"],
+      "semantic_text": "HPC workflow engineering for research environments. Parallel pipelines, scheduled execution, reproducibility, SLURM orchestration, and throughput-focused systems design."
+    },
+    {
+      "id": "genomic_data_transformation",
+      "title": "Genomic Data Transformation",
+      "summary": "Turning sequencing outputs into clean downstream-ready data products.",
+      "why_it_matters": "This card emphasizes the transformation layer between raw biological inputs and usable analysis artifacts.",
+      "tags": ["genomics", "etl", "preprocessing", "transformation", "qc", "biology"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl"],
+      "semantic_text": "Genomic data transformation for sequencing workflows. Converting raw reads and intermediate outputs into structured, quality-controlled data products for downstream biological analysis and machine learning."
+    },
+    {
+      "id": "scientific_etl",
+      "title": "Scientific ETL",
+      "summary": "Structured ingestion, cleaning, validation, and export for research datasets.",
+      "why_it_matters": "This card captures practical data engineering in scientific settings, where inputs are messy and downstream users need trustable outputs.",
+      "tags": ["etl", "validation", "data-engineering", "research-computing", "pipelines"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Scientific ETL for research data systems. Ingestion, cleaning, validation, chunking, transformation, and export into forms that support analysis, modeling, or retrieval."
+    },
+    {
+      "id": "batch_processing_at_scale",
+      "title": "Batch Processing at Scale",
+      "summary": "Managing large sample volumes and long-running jobs reliably.",
+      "why_it_matters": "This card points to systems that need to hold up under real volume rather than a handful of test cases.",
+      "tags": ["scale", "batching", "samples", "hpc", "throughput", "operations"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl"],
+      "semantic_text": "Batch processing at scale for scientific workflows. Large sample counts, long-running jobs, reliable execution, and practical handling of throughput and resource constraints."
+    },
+    {
+      "id": "reproducible_modeling",
+      "title": "Reproducible Modeling",
+      "summary": "Modeling workflows designed to be rerun, compared, and audited.",
+      "why_it_matters": "This card focuses on the engineering discipline around ML experiments rather than just getting one model run to work.",
+      "tags": ["ml", "reproducibility", "modeling", "auditability", "experiments"],
+      "related_projects": ["dna_methylation_age_clock_modeling"],
+      "semantic_text": "Reproducible modeling workflows for research ML. Systems built so runs can be repeated, compared, logged, and audited cleanly over time."
+    },
+    {
+      "id": "methylation_modeling",
+      "title": "Methylation Modeling",
+      "summary": "Engineering around methylation-based prediction and analysis workflows.",
+      "why_it_matters": "This card highlights domain-specific modeling work tied directly to biological data rather than generic ML examples.",
+      "tags": ["methylation", "biology", "modeling", "prediction", "research-ml"],
+      "related_projects": ["dna_methylation_age_clock_modeling"],
+      "semantic_text": "Methylation-focused modeling for biological prediction. Engineering systems for methylation age clock experiments, structured outputs, and repeatable validation."
+    },
+    {
+      "id": "feature_engineering_for_biology",
+      "title": "Feature Engineering for Biology",
+      "summary": "Converting biological signals into model-ready representations.",
+      "why_it_matters": "This card connects biological preprocessing with the modeling side of the work.",
+      "tags": ["feature-engineering", "biology", "genomics", "modeling", "preprocessing"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling"],
+      "semantic_text": "Feature engineering for biology and genomics. Taking biological measurements or sequencing-derived outputs and preparing them for modeling, scoring, and downstream analysis."
+    },
+    {
+      "id": "cross_validation_design",
+      "title": "Cross-Validation Design",
+      "summary": "Building evaluation workflows that are configurable and statistically defensible.",
+      "why_it_matters": "This card highlights the mechanics of designing better experiment evaluation, not just training a model once.",
+      "tags": ["cross-validation", "evaluation", "modeling", "experiments", "repeatability"],
+      "related_projects": ["dna_methylation_age_clock_modeling"],
+      "semantic_text": "Cross-validation design for reproducible model evaluation. Flexible modes, repeat-aware experiments, and defensible workflows for comparing model behavior."
+    },
+    {
+      "id": "experiment_logging",
+      "title": "Experiment Logging",
+      "summary": "Capturing runs, parameters, outputs, and comparisons cleanly.",
+      "why_it_matters": "This card is about making experiments traceable instead of opaque.",
+      "tags": ["logging", "metadata", "auditability", "ml", "tracking"],
+      "related_projects": ["dna_methylation_age_clock_modeling"],
+      "semantic_text": "Experiment logging and metadata capture for research ML. Recording run setup, outputs, parameters, and comparisons to support auditability and clearer iteration."
+    },
+    {
+      "id": "configuration_driven_pipelines",
+      "title": "Configuration-Driven Pipelines",
+      "summary": "Tools that behave predictably because inputs and settings are explicit.",
+      "why_it_matters": "This card points to engineering work that reduces hidden assumptions and hardcoded execution paths.",
+      "tags": ["configuration", "pipelines", "cli", "reproducibility", "workflow"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling"],
+      "semantic_text": "Configuration-driven pipelines and workflows. Explicit parameters, controlled execution, and tools that are easier to rerun, share, and extend."
+    },
+    {
+      "id": "data_quality_and_validation",
+      "title": "Data Quality and Validation",
+      "summary": "Catching inconsistencies, anomalies, and malformed inputs early.",
+      "why_it_matters": "This card represents the guardrail layer that keeps downstream results from drifting into garbage.",
+      "tags": ["validation", "qc", "anomalies", "data-quality", "reliability"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling"],
+      "semantic_text": "Data quality and validation for scientific workflows. Checking inputs, outputs, structure, and anomalies early so downstream analysis stays reliable."
+    },
+    {
+      "id": "scientific_software_reliability",
+      "title": "Scientific Software Reliability",
+      "summary": "Building tools that are useful beyond one-off scripts.",
+      "why_it_matters": "This card highlights the difference between exploratory code and software that other people can actually rely on.",
+      "tags": ["reliability", "software-engineering", "research-computing", "tooling"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling", "self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Scientific software reliability in research environments. Building tools that move beyond ad hoc scripts toward repeatable, maintainable, useful systems."
+    },
+    {
+      "id": "research_computing_systems",
+      "title": "Research Computing Systems",
+      "summary": "Engineering for real lab environments, not just toy notebooks.",
+      "why_it_matters": "This card is the broad umbrella for systems work in scientific settings where operational reality matters.",
+      "tags": ["research-computing", "scientific-environments", "systems", "hpc", "ml"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling", "self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Research computing systems built for scientific environments. Work that combines biological data, robust engineering, reproducibility, and practical usability."
+    },
+    {
+      "id": "retrieval_for_research",
+      "title": "Retrieval for Research",
+      "summary": "Using search and ranking to surface useful scientific knowledge fast.",
+      "why_it_matters": "This card highlights retrieval as a practical research tool instead of generic chat novelty.",
+      "tags": ["retrieval", "search", "scientific-content", "ai", "ranking"],
+      "related_projects": ["self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Retrieval for research settings. Search, ranking, and knowledge access systems that help researchers find the right scientific information quickly."
+    },
+    {
+      "id": "semantic_search_workflows",
+      "title": "Semantic Search Workflows",
+      "summary": "Embeddings, similarity, and ranked retrieval over curated content.",
+      "why_it_matters": "This card shows the more ML-specific retrieval layer in a way that is concrete and compact.",
+      "tags": ["embeddings", "semantic-search", "faiss", "similarity", "retrieval"],
+      "related_projects": ["self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Semantic search workflows with embeddings and vector similarity. Curated scientific content, sentence-transformers, FAISS, and ranked retrieval."
+    },
+    {
+      "id": "local_first_ai_tools",
+      "title": "Local-First AI Tools",
+      "summary": "AI systems designed around privacy, control, and local corpora.",
+      "why_it_matters": "This card reflects the design choice to keep scientific workflows controlled and practical rather than outsourced to generic external tools.",
+      "tags": ["local-first", "ai", "privacy", "curated-corpora", "research-tools"],
+      "related_projects": ["self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Local-first AI tools for controlled scientific environments. Retrieval over local corpora, privacy-conscious design, and practical internal use."
+    },
+    {
+      "id": "internal_research_assistants",
+      "title": "Internal Research Assistants",
+      "summary": "Lab-facing tools that help researchers query and navigate knowledge.",
+      "why_it_matters": "This card frames AI tooling as a practical assistant for internal research work.",
+      "tags": ["research-assistant", "ui", "retrieval", "scientific-knowledge", "streamlit"],
+      "related_projects": ["self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Internal research assistants for scientific knowledge work. Lab-facing tools that help users query curated content and navigate research information more effectively."
+    },
+    {
+      "id": "compact_model_workflows",
+      "title": "Compact Model Workflows",
+      "summary": "Interest in efficient models that are practical to run and ship.",
+      "why_it_matters": "This card gives you a place to connect future compact-model work to the semantic explorer without pretending you have already built the whole thing.",
+      "tags": ["compact-models", "efficient-ai", "deployment", "inference", "edge"],
+      "related_projects": [],
+      "semantic_text": "Compact model workflows and efficient AI. Interest in smaller practical models that are easier to run, ship, and integrate into useful applications."
+    },
+    {
+      "id": "on_device_ai",
+      "title": "On-Device AI",
+      "summary": "Applied interest in edge-friendly inference and lightweight deployment.",
+      "why_it_matters": "This card lets the site surface your current direction even before it becomes a full flagship project.",
+      "tags": ["on-device-ai", "edge", "efficient-ai", "deployment", "local-inference"],
+      "related_projects": [],
+      "semantic_text": "On-device AI and edge-friendly inference. Interest in lightweight deployment, efficient models, and practical local execution."
+    },
+    {
+      "id": "agentic_prototyping",
+      "title": "Agentic Prototyping",
+      "summary": "Building ad hoc apps quickly with coding agents and structured workflows.",
+      "why_it_matters": "This card reflects your current personal builder mode and points to how you like to work.",
+      "tags": ["agentic-systems", "codex", "claude", "prototyping", "ad-hoc-apps"],
+      "related_projects": [],
+      "semantic_text": "Agentic prototyping with coding agents. Building ad hoc applications quickly using tools like Codex and Claude, with an eye toward practical workflows and experimentation."
+    },
+    {
+      "id": "cli_and_developer_tooling",
+      "title": "CLI and Developer Tooling",
+      "summary": "Practical command-line tools that make repeated work faster.",
+      "why_it_matters": "This card captures the developer ergonomics side of your work.",
+      "tags": ["cli", "developer-tools", "automation", "python", "bash"],
+      "related_projects": ["dna_methylation_age_clock_modeling", "rrbs_wgbs_hpc_genomic_etl"],
+      "semantic_text": "CLI and developer tooling for repeated technical work. Tools that improve speed, reduce friction, and make workflows more usable over time."
+    },
+    {
+      "id": "interactive_research_apps",
+      "title": "Interactive Research Apps",
+      "summary": "Small usable interfaces for technical workflows and data exploration.",
+      "why_it_matters": "This card gives space to the UI side of the work without overstating full product engineering.",
+      "tags": ["ui", "streamlit", "apps", "research-tools", "usability"],
+      "related_projects": ["self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "Interactive research apps and lightweight technical interfaces. Small applications that expose useful scientific or AI logic in a usable way."
+    },
+    {
+      "id": "scientific_data_storytelling",
+      "title": "Scientific Data Storytelling",
+      "summary": "Making complex technical outputs understandable and actionable.",
+      "why_it_matters": "This card covers the communication layer between raw computation and human use.",
+      "tags": ["communication", "analysis", "reporting", "visualization", "storytelling"],
+      "related_projects": ["dna_methylation_age_clock_modeling", "rrbs_wgbs_hpc_genomic_etl"],
+      "semantic_text": "Scientific data storytelling through reporting, visualization, and interpretation. Turning technical outputs into forms people can actually use."
+    },
+    {
+      "id": "from_research_to_engineering",
+      "title": "From Research to Engineering",
+      "summary": "Taking research logic and hardening it into real tooling.",
+      "why_it_matters": "This card is a clean high-level theme that connects several of your strongest projects.",
+      "tags": ["research-to-engineering", "tooling", "reproducibility", "systems", "translation"],
+      "related_projects": ["rrbs_wgbs_hpc_genomic_etl", "dna_methylation_age_clock_modeling", "self_hosted_bioinformatics_ai_rag"],
+      "semantic_text": "From research to engineering. Taking narrower scientific logic and turning it into more robust, reusable, scalable tooling for real environments."
+    }
+  ]
+}

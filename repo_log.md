@@ -8,6 +8,10 @@ This file holds repo-structure and maintenance notes for `josefoviedo.github.io`
   - main landing page
 - `assets/site.css`
   - shared site styling
+- `assets/semantic-explorer.js`
+  - client-side logic for the lightweight semantic explorer on the homepage
+- `assets/semantic_items.json`
+  - structured data scaffold for a future lightweight semantic explorer
 - `projects/`
   - short public-facing pages for selected current work
 
