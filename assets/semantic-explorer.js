@@ -8,7 +8,7 @@
     return;
   }
 
-  const DATA_URL = "assets/semantic_items.json";
+  const DATA_URL = "assets/semantic_items.json?v=20260331-2";
   const VISIBLE_CARD_COUNT = 8;
   const STOP_WORDS = new Set([
     "a", "an", "and", "are", "around", "as", "at", "be", "been", "being",
