@@ -65,9 +65,17 @@ a {
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--muted);
   font-weight: 600;
+}
+
+.site-nav a + a::before {
+  content: "|";
+  margin-right: 18px;
+  color: rgba(22, 37, 33, 0.34);
 }
 
 .panel {
